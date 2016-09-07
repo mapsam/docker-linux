@@ -9,11 +9,18 @@ docker build -t docker-linux .
 docker run -it docker-linux
 ```
 
-Will give you an interactive linux shell, with a single, custom environment variable (defined in the `Dockerfile`)
+This will open an interactive linux shell, with a couple custom things (defined in the `Dockerfile`)
 
-```
+##### Custom Environment Variable
+```shell
 root@7b38c744a769:/# echo $WAKA
 FLOCKA
+```
+
+##### Custom Bash Script
+```shell
+root@7b38c744a769:/# command # the name of the command
+THIS IS THE OUTPUT OF THE COMMAND
 ```
 
 You can do the thing!
